@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Lauren Coseo">
+
+        <!-- Title -->
+        <title>Peter and Lauren Get Married</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cookie&family=Homemade+Apple&family=Lato:wght@100;300;400&family=Rouge+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/3ea1f9525c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- My Style Sheets -->
+        <link href="css/weddingStyle.css" rel="stylesheet" type="text/css">
+        <link href="css/madLibsStyle.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <header class="header">
+            <!-- Mobile Nav Bar -->
+            <h1 class="page-title short-title">P + L</h1>
+
+            <!-- Big Screen Nav Bar -->
+            <nav class="nav">
+                <div id="link-1"><a href="" class="nav-link">Our Story</a></div>
+                <div id="link-2"><a href="" class="nav-link">The Wedding</a></div>
+                <div id="link-3"><a href="" class="nav-link"><h1 class="page-title full-title">Peter & Lauren</h1></a></div>
+                <div id="link-4"><a href="" class="nav-link">Registry</a></div>
+                <div id="link-5"><a href="" class="nav-link">Photos</a></div>
+            </nav>
+        </header>
+        <section id="main">
+            <h1 class="title">Complete our Story! <i class="far fa-smile"></i></h1>
+            <!-- form -->
+            <form action="madLibsFillIn.html" method="GET">
+                <label for="year">Year:</label>
+                <input type="text" id="year" name="year" required>
+                <br>
+
+                <label for="noun-1">Noun:</label>
+                <input type="text" id="noun-1" name="noun-1" required>
+                <br>
+
+                <label for="noun-2">Noun:</label>
+                <input type="text" id="noun-2" name="noun-2" required>
+                <br>
+
+                <label for="gNoun">Gender Noun:</label>
+                <input type="text" id="gNoun" name="gNoun" required>
+                <br>
+
+                <label for="adj-1">Adjective:</label>
+                <input type="text" id="adj-1" name="adj-1" required>
+                <br>
+
+                <label for="verb-1">Verb (Past Tense):</label>
+                <input type="text" id="verb-1" name="verb-1" required>
+                <br>
+
+                <label for="verb-2">Verb (Present Tense):</label>
+                <input type="text" id="verb-2" name="verb-2" required>
+                <br>
+
+                <label for="colClass">College Class:</label>
+                <input type="text" id="colClass" name="colClass" required>
+                <br>
+
+                <label for="noun-3">Noun:</label>
+                <input type="text" id="noun-3" name="noun-3" required>
+                <br>
+
+                <label for="adj-2">Adjective:</label>
+                <input type="text" id="adj-2" name="adj-2" required>
+                <br>
+
+                <label for="phrase-1">Phrase:</label>
+                <input type="text" id="phrase-1" name="phrase-1" required list="quote-choices">
+                <datalist id="quote-choices">
+                  <option value="Winner Winner Chicken Dinner"></option>
+                  <option value="The Early Bird Gets the Worm"></option>
+                  <option value="Dance Like No One is Watching"></option>
+                </datalist>
+                <br>
+
+                <label for="phrase-2">Phrase:</label>
+                <input type="text" id="phrase-2" name="phrase-2" required>
+                <br>
+                
+                <!-- <label for="message">Meaningful Message:</label>
+                <br>
+                <textarea id="message" name="message" required rows="8" cols="40"></textarea>
+                <br> -->
+      
+      
+                <input type="submit" value="See Your Story!">
+      
+                
+            </form>
+          </section>
+        </main>
+        <footer class="footer">
+            <i class="fas fa-heart"></i>
+            <p>Peter & Lauren</p>
+        </footer>
+
+    </body>
+</html>

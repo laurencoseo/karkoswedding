@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Lauren Coseo">
+
+        <!-- Title -->
+        <title>Peter and Lauren Get Married</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cookie&family=Homemade+Apple&family=Lato:wght@100;300;400&family=Rouge+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/3ea1f9525c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- My Style Sheets -->
+        <link href="css/weddingStyle.css" rel="stylesheet" type="text/css">
+        <link href="css/madLibsStyle.css" rel="stylesheet" type="text/css">
+
+        <!-- JS Files -->
+        <!-- <script src="js/madLibs.js"></script> -->
+    </head>
+    <body>
+        <header class="header">
+            <!-- Mobile Nav Bar -->
+            <h1 class="page-title short-title">P + L</h1>
+
+            <!-- Big Screen Nav Bar -->
+            <nav class="nav">
+                <div id="link-1"><a href="" class="nav-link">Our Story</a></div>
+                <div id="link-2"><a href="" class="nav-link">The Wedding</a></div>
+                <div id="link-3"><a href="" class="nav-link"><h1 class="page-title full-title">Peter & Lauren</h1></a></div>
+                <div id="link-4"><a href="" class="nav-link">Registry</a></div>
+                <div id="link-5"><a href="" class="nav-link">Photos</a></div>
+            </nav>
+        </header>
+        <section id="main">
+            <h1 class="title">The Story of How We Met</h1>
+            <!-- story -->
+            <article id="story"></article>
+            <a href="madLibs.html" class="button">Start Over</a>
+            <a href="madLibsOriginalStory.html" class="button">Original Story</a>
+          </section>
+        </main>
+        <footer class="footer">
+            <i class="fas fa-heart"></i>
+            <p>Peter & Lauren</p>
+        </footer>
+
+        <script type="text/javascript">
+            const words = new URLSearchParams(window.location.search);
+
+            const year = words.get('year');
+            const noun1 = words.get('noun-1');
+            const noun2 = words.get('noun-2');
+            const genderNoun = words.get('gNoun');
+            const adjective1 = words.get('adj-1');
+            const verbPast = words.get('verb-1');
+            const verbPresent = words.get('verb-2');
+            const collegeClass = words.get('colClass');
+            const noun3 = words.get('noun-3');
+            const adjective2 = words.get('adj-2');
+            const phrase1 = words.get('phrase-1');
+            const phrase2 = words.get('phrase-2');
+            
+            const story = `<p>Peter and Lauren met in <span class="word">${year}</span>. They ended up in the same lab class at the University of Michigan. One day, Peter noticed that Lauren had a <span class="word">${noun1}</span>. He went up to her and asked “Excuse me, Miss. Would you fancy a <span class="word">${noun2}</span> with a <span class="word">${genderNoun}</span> such as myself?” She replied, “Not in your lifetime, pal.” He was <span class="word">${adjective1}</span>, but he didn’t give up! The next semester, he <span class="word">${verbPast}</span> into your computer and learned her class schedule so he could <span class="word">${verbPresent}</span> one of her classes. They somehow ended up in the same <span class="word">${collegeClass}</span> class. Peter was the only <span class="word">${noun3}</span> in the class so he attracted all of the females with his hot bod and sick skills. Lauren got extremely <span class="word">${adjective2}</span> so she walked over and started screaming <span class="word">${phrase1}</span> To which he replied, <span class="word">${phrase2}</span>. They have been in love ever since. </p>`;
+            // console.log(story);
+
+            // Grabbing the story element
+            const storyEl = document.getElementById('story');
+            // Populating the story element with the value of the story variable
+            storyEl.innerHTML = story;
+        </script>
+    </body>
+</html>
